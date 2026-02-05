@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/photo2.jpg" width="180" style="border-radius:50%; margin-bottom:20px;">
+<img src="photo2.jpg" width="220" style="border-radius:24px;">
 </p>
 
 # Marina Vasylyeva
