@@ -66,4 +66,4 @@ English · Greek · Russian · Ukrainian — Fluent
 ## Contact
 
 📍 Limassol, Cyprus  
-✉️ Email: [mv@connect.club](mailto:maryna@email.com)
+📧 Email: [mv@connect.club](mailto:mv@connect.club)
