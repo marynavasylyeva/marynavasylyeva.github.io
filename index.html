@@ -9,12 +9,16 @@
   <style>
     :root{
       --bg:body {
-  background: #111827; /* тёплый тёмно-графитовый */
+  background: background:
+  radial-gradient(900px 400px at 15% -10%, rgba(255,255,255,.03), transparent 60%),
+  radial-gradient(800px 400px at 85% 0%, rgba(37,211,102,.05), transparent 55%),
+  var(--bg);
+
 }
 ;
       --card:#12131a;
-      --text:#e9e9ee;
-      --muted:#b6b7c2;
+      --text:#e6e7ea;
+      --muted:#b8bcc6;
       --line:#232431;
       --accent:#ffffff;
       --btn:#2c2c2c;
@@ -54,27 +58,24 @@
       overflow:hidden;
     }
 
-    header{
-      padding: 34px 28px 18px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      display:flex;
-      gap:22px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-
-    .avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 22px;
+   header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
-      object-fit: cover;
-      border: 1px solid rgba(255,255,255,.14);
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-      background:#222;
-      flex: 0 0 auto;
-    }
+
+    .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 24px;   /* мягкое скругление, не круг */
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+
+     
+    
 
     .title{
       flex: 1 1 340px;
@@ -210,10 +211,10 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <img class="avatar" src="photo2.jpg" alt="Marina Vasylyeva" />
+        <img class="avatar" src="photo2.jpg" alt="Maryna Vasylyeva" />
 
         <div class="title">
-          <h1>Marina Vasylyeva</h1>
+          <h1>Maryna Vasylyeva</h1>
           <div class="role">Operations &amp; Office Administrator</div>
           <div class="meta">Limassol, Cyprus · Open to on-site &amp; remote collaboration</div>
 
@@ -268,7 +269,7 @@
           <h2>Contact</h2>
           <p class="contact small">
             📍 Limassol, Cyprus<br/>
-            📧 <a href="mailto:marina.vasilieva@hotmail.co.uk">marina.vasilieva@hotmail.co.uk</a><br/>
+            📧 <a href="mailto:marina.vasilieva@hotmail.co.uk">mv@connect.club</a><br/>
             📱 <a href="https://wa.me/35796575712" target="_blank" rel="noopener">+357 9657 5712 (WhatsApp)</a>
           </p>
 
