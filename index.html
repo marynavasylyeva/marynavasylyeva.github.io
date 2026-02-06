@@ -17,8 +17,8 @@
 }
 ;
       --card:#12131a;
-      --text:#e6e7ea;
-      --muted:#b8bcc6;
+      --text:#f1f1f1;
+      --muted:#c7cbd1;
       --line:#232431;
       --accent:#ffffff;
       --btn:#2c2c2c;
@@ -58,11 +58,14 @@
       overflow:hidden;
     }
 
-   header {
+  header {
   display: flex;
   gap: 24px;
   align-items: center;
+  padding: 24px;
+  min-height: 200px;   /* 🔹 ВОТ ОНО */
 }
+
 
 
     .avatar {
@@ -79,7 +82,7 @@
 
     .title{
       flex: 1 1 340px;
-      min-width: 260px;
+      min-width: 520px;
     }
 
     h1{
