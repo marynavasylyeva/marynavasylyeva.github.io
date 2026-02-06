@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marina Vasylyeva — Operations & Office Administrator</title>
+  <meta name="description" content="Operations & Office Administrator based in Limassol, Cyprus. Administrative and operational support, financial coordination, and documentation." />
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#12131a;
+      --text:#e9e9ee;
+      --muted:#b6b7c2;
+      --line:#232431;
+      --accent:#ffffff;
+      --btn:#2c2c2c;
+      --wa:#25D366;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(255,255,255,.08), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(37,211,102,.10), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    .wrap{
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 36px 18px 60px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), transparent 35%), var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    header{
+      padding: 34px 28px 18px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      display:flex;
+      gap:22px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .avatar{
+      width: 110px;
+      height: 110px;
+      border-radius: 24px; /* мягкое округление */
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      background:#222;
+      flex: 0 0 auto;
+    }
+
+    .title{
+      flex: 1 1 340px;
+      min-width: 260px;
+    }
+
+    h1{
+      margin:0;
+      font-size: 34px;
+      letter-spacing: .2px;
+      line-height: 1.15;
+    }
+    .role{
+      margin-top: 8px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .meta{
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .actions{
+      margin-top: 16px;
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 11px 14px;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      color: var(--accent);
+      background: rgba(255,255,255,.06);
+      transition: transform .05s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .btn:hover{ background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.18); }
+    .btn:active{ transform: translateY(1px); }
+
+    .btn-dark{ background: rgba(44,44,44,.85); }
+    .btn-dark:hover{ background: rgba(44,44,44,1); }
+
+    .btn-wa{
+      background: rgba(37,211,102,.92);
+      border-color: rgba(37,211,102,.40);
+      color:#0b0c10;
+    }
+    .btn-wa:hover{ background: rgba(37,211,102,1); }
+
+    main{
+      padding: 22px 28px 30px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 22px;
+    }
+
+    section{
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 16px;
+      padding: 18px 18px;
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 15px;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    p{ margin: 10px 0; color: var(--text); }
+    .small{ color: var(--muted); font-size: 14px; }
+
+    ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    li{ margin: 7px 0; color: var(--text); }
+
+    .tagrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top: 10px;
+    }
+    .tag{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .contact a{
+      color: var(--text);
+      text-decoration:none;
+      border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+    .contact a:hover{
+      border-bottom-color: rgba(255,255,255,.38);
+    }
+
+    footer{
+      padding: 16px 28px 24px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px){
+      main{ grid-template-columns: 1fr; }
+      header{ padding: 26px 18px 16px; }
+      main{ padding: 18px; }
+      footer{ padding: 14px 18px 18px; }
+      h1{ font-size: 30px; }
+      .avatar{ width: 100px; height: 100px; border-radius: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <img class="avatar" src="photo.jpg" alt="Marina Vasylyeva" />
+
+        <div class="title">
+          <h1>Marina Vasylyeva</h1>
+          <div class="role">Operations &amp; Office Administrator</div>
+          <div class="meta">Limassol, Cyprus · Open to on-site &amp; remote collaboration</div>
+
+          <div class="actions">
+            <a class="btn btn-dark" href="mailto:marina.vasilieva@hotmail.co.uk">✉️ Email</a>
+            <a class="btn btn-wa" href="https://wa.me/35796575712" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn" href="https://marynavasylyeva.github.io" title="CV link (same domain)">📄 CV</a>
+          </div>
+
+          <div class="tagrow">
+            <span class="tag">Operations support</span>
+            <span class="tag">Payments &amp; banking coordination</span>
+            <span class="tag">Expense tracking &amp; reporting</span>
+            <span class="tag">Travel &amp; events</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h2>About</h2>
+          <p>
+            I support business operations by bringing structure, clarity, and reliability to day-to-day administrative and operational processes.
+          </p>
+          <p>
+            My focus is helping teams run smoothly — from administration and documentation to financial coordination, scheduling, and communication.
+            I work with attention to detail, discretion, and a service mindset, and I enjoy creating order in complex environments.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p class="contact small">
+            📍 Limassol, Cyprus<br/>
+            📧 <a href="mailto:marina.vasilieva@hotmail.co.uk">marina.vasilieva@hotmail.co.uk</a><br/>
+            📱 <a href="https://wa.me/35796575712" target="_blank" rel="noopener">+357 9657 5712 (WhatsApp)</a>
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            Prefer a quick overview? Share this page or scan a QR code linked to it.
+          </p>
+        </section>
+
+        <section>
+          <h2>What I do</h2>
+          <ul>
+            <li>Operations and office administration</li>
+            <li>Payments, banking, and documentation support</li>
+            <li>Financial coordination, expense tracking, and basic reporting</li>
+            <li>Business travel coordination and logistics</li>
+            <li>Corporate event planning and operational support</li>
+            <li>Document management and record keeping</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Experience (short)</h2>
+          <p class="small"><strong>Administrative Director / Office Administrator</strong><br/>
+            International IT companies (2016–2025)<br/>
+            Supporting daily operations, administration, financial coordination, payments, reporting, and internal processes.
+          </p>
+
+          <p class="small" style="margin-top:12px;"><strong>Operations &amp; Administration</strong><br/>
+            Luxury hospitality &amp; golf resort environment (2010–Present)<br/>
+            Managing bookings, invoicing, reporting, client communication, and operational coordination in a service-focused setting.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="y"></span> Marina Vasylyeva · This page is designed as a simple professional contact & profile hub.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
