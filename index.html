@@ -17,15 +17,15 @@
 }
 ;
       --card:rgba(255,255,255,.78); 
-      --text: #1f2933;
-      --muted: #4b5563;    
+      --text: #1f2937; 
+      --muted: #4b5563; 
       --line:rgba(17,24,39,.10);
       --accent:#ffffff;
       --btn:#2c2c2c;
       --wa:#25D366;
       --shadow: 0 12px 40px rgba(0,0,0,.35);
       --radius: 18px;
-      --heading: #111827;  
+      --heading: #111827;
     }
 
     *{ box-sizing:border-box; }
@@ -86,6 +86,7 @@
 
 
     .avatar {
+      .avatar {
   width: 140px;
   height: 140px;
   border-radius: 24px;   /* мягкое скругление, не круг */
@@ -155,6 +156,10 @@
     .btn-wa:hover{ background: rgba(37,211,102,1); }
 
     main{
+      main{
+  color: var(--text);
+}
+
       max-width: 920px;
   margin: 18px auto 60px;
   padding: 0 18px;
@@ -170,6 +175,16 @@
   letter-spacing: .02em;
   margin: 0 0 10px;
 }
+      h2{
+  margin-top: 28px;
+  font-size: 20px;
+}
+
+h3{
+  margin-top: 20px;
+  font-size: 16px;
+}
+
 
 .kicker, .label, .section-title{
   color: var(--muted);
@@ -198,7 +213,12 @@
   line-height: 1.65;
 }
 
-p{
+  p{
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text);
+}
+
   margin: 0 0 12px;
 }
 
