@@ -73,34 +73,33 @@
       overflow:hidden;
     }
 
-  header {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  padding: 24px;
- }
-    
- img{
-  max-width: 100%;
-  height: auto;c}
-
-}
-.avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 24px;
-  object-fit: cover;
-  border: 2px solid rgba(255,255,255,0.15);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-img{ max-width: 100%; height: auto; 
-    
+ header{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  padding:24px;
+  flex-wrap:wrap;
 }
 
-    .title{
-  flex: 1 1 340px;
-  min-width: 0;
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
 }
+
+.avatar{
+  width:160px;
+  height:160px;
+  border-radius:24px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.title{
+  flex:1;
+  min-width: 1;
+}
+
 
 
     h1{
